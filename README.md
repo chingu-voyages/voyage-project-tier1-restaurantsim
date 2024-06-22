@@ -1,4 +1,4 @@
-# voyage-project-tier1-color-explorer
+# voyage-project-tier1-restaurant-simulator
 
 ## Table of Contents
 
@@ -10,23 +10,20 @@
 
 ## Overview
 
-Hello Chingus!
+Welcome, Chingus!
 
-Let's consider the importance of colors in our lives. These bright shades not only decorate our surroundings but also affect our feelings and thoughts every day. From the calming effect of gentle blues to the energizing power of vibrant greens, colors impact how we experience and express ourselves. However, many of us find ourselves struggling to find matching colors, whether for our outfits or interior design, often leading to frustration and uncertainty in our choices.
+Are you ready to embark on a journey into the vibrant world of restaurant management? Experience the excitement of building and running your own culinary venture from scratch.
 
-During this voyage, you will be building a color matching app. The app is intended to serve as a personal consultant, helping users find harmonious color combinations for various purposes, including outfit coordination, interior design, website design, graphic design projects, and more.
+From ancient civilizations like Rome and China to the bustling kitchens of 18th-century France, restaurants have been important in serving communities and travelers alike. Over the centuries, they've evolved into cultural hubs, offering everything from fine dining experiences to fast food and global cuisines.
 
-- [Color theory example site](https://color.adobe.com/create/color-wheel)
+![The Oldest Restaurant In (Almost) Every Country](./assets/the_oldest_restaurants.jpg)
 
-![Color theory example site](./assets/colorwheel2.png)
+In this voyage, your team will create and manage your dream restaurant, from designing the menu to handling customer orders and managing finances. Get ready to unleash your creativity and business skills in the exciting world of restaurant simulation!
 
-- [Color theory example site](https://www.canva.com/colors/color-wheel/)
+Bon appétit and happy managing!
 
-![Color theory example site](./assets/colowheel1.png)
+![Restaurant simulator example app](./assets/restaurant_app.png)
 
-This voyage takes an even more thrilling turn as Chingu introduces the integration of the OpenAI for the first time. With this powerful tool at your disposal, you'll craft an innovative solution enabling users to uncover their ideal color combinations.
-
-So, grab your color wheels and dive into coding!
 
 ## General Instructions
 
@@ -57,22 +54,9 @@ implement to enhance this app, if time permits.
 - [ ] This is a purely frontend application. No backend is required.
 - [ ] You may use any languages, tools, or libraries you prefer when designing and building this app.
 - [ ] You may **_NOT_** use AI-base solution generators like GitHub CoPilot.
-- [ ] The app should facilitate connectivity to the GroqAI API for color recommendations.
+- [ ] We've included a JSON file containing the raw data in the /assets directory in this repo. But, if you choose, you may use the Menus API instead.
 - [ ] Useful links and resources:
-  - [Wiki about Color Scheme](https://en.wikipedia.org/wiki/Color_scheme)
-  - [GroqAI API docs](https://console.groq.com/docs/quickstart)
-  - [Color picker library](https://iro.js.org/)
-  - Video Tutorials:
-    - [How to Create Color Picker in Javascript & HTML](https://www.youtube.com/watch?v=eIw-Nou9L9E)
-    - [HTML | CSS Color Picker ](https://www.youtube.com/watch?v=m-z3xQL9rzU)
-
-  - **API Call Guide** For performing API calls, you can refer to this [example sandbox](https://codesandbox.io/p/devbox/exciting-rain-h5tnmj?file=%2Fsrc%2Findex.html%3A3%2C7). The example demonstrates how to make API calls using JavaScript fetch() method.
-
-  - **API Tutorial Resources:**
-
-    - [Web Streams Tutorial](https://umaar.com/dev-tips/269-web-streams-openai/): This tutorial includes a blog post and a video.
-    - [Using Fetch API - MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch): Detailed documentation from MDN.
-    - [Fetch API Tutorial - YouTube](https://www.youtube.com/watch?v=cuEtnrL9-H0): An explanation about Fetch API on YouTube.
+  - [Menus API](https://menus-api.vercel.app/)
 
 #### Styling
 
@@ -84,72 +68,76 @@ implement to enhance this app, if time permits.
 #### Functionality
 
 -   Overview:
-    - [ ] Develop a single-page application (SPA) or its equivalent to deliver intuitive color recommendation functionality to users.
+    - [ ] Develop a single-page application (SPA) that simulates a restaurant menu and ordering system.
 
-- Color Capture and Processing
-    - [ ] Implement a color palette selector allowing users to choose color from a predefined set.
-    - [ ] Provide a minimum of 9 color options represented as boxes on the page.
-          
-    **Note:** You have the flexibility to implement the identification of each color in a way that suits your design. Consider utilizing unique identifiers for each color box to facilitate interaction. For instance, you might use the color's HEX code or any other method you find suitable. This allows for customization while ensuring clarity in color selection.
+-   Menu Fetching and Display
+    - [ ] Fetch menu data from a provided JSON file.
+    - [ ] Display the fetched menu items in respective categories on the page.
+    - [ ] Ensure the menu includes images, names, descriptions, and prices for each item.
+    
+-   Order Management
 
-- API Connectivity and Response Handling
-    - [ ] Establish connectivity to the GroqAI API for color analysis via provided API key.
-    - [ ] Send the captured color data to the API as part of the prompt.
-    - [ ] When sending color data to the GroqAI API, include it in the prompt along with a request for color recommendations. Ensure it also requests colors code with their respective names for the recommended colors. Example prompt:
-      - "Suggest color recommendations based on the [selected color]"
-      - "Color recs [selected color]"
-    - [ ] Retrieve and process the response from the GroqAI API.
-    - [ ] Capture the colors code and text description provided by the GroqAI API in the response.
+    - [ ] Implement functionality to add menu items to an order.
+    - [ ] Display the current order summary, including item names, prices, and total cost.
+    - [ ] Provide an option to add tips to the order total.
+    - [ ] Ensure users can remove items from the order before finalizing it.
 
-- Visual Representation
-    - [ ] Visualize the response from the GroqAI API using colors and accompanying text.
-    - [ ] Represent the AI-generated color response in a visually comprehensible manner within the application interface.
+-   Payment Processing
 
-- User Experience
-    - [ ] Ensure the application provides a seamless user experience for color selection, processing, and response visualization.
-    - [ ] Implement intuitive UI/UX elements to guide users through the color capture and analysis process.
+    - [ ] Implement a credit system where users can add credit to their account.
+    - [ ] Ensure users can make payments using their available credit.
+    - [ ] Validate sufficient credit before processing the payment and provide appropriate feedback to the user.
 
-- Responsiveness
-    - [ ] Ensure the web application is responsive and accessible across various devices and screen sizes.
-    - [ ] Utilize responsive design techniques to adapt to different viewport sizes.
+-   User Interface and Experience
+
+    - [ ] Ensure the application provides a seamless user experience for browsing the menu, adding items to the order, and making payments.
+    - [ ] Implement intuitive UI/UX elements to guide users through the menu browsing and ordering process.
+    - [ ] Use responsive design techniques to ensure the application is accessible and functional across various devices and screen sizes.
+
+
 
 ### Extras (Not Required)
 
-- Color Capture and Processing
-    - [ ] Create boxes of minimum 9 colors with their HEX code OR Use a color picker library to select color, eg [Iro JS](https://iro.js.org/).
-    - [ ] Utilize a library for visually representing color recommendation responses.
+- Menu Customization
 
-- API Connectivity and Response Handling
-    - [ ] Ensure robust error handling for API connectivity, data formatting, and response processing.
+  - [ ] Use Menus API to fetch the restaurant data.
+  - [ ] Implement filters and search functionality to easily find specific menu items.
+
 
 ## Acceptance Criteria
 
-- Color Capture and Processing
-    - [ ] Users should be able to accurately select colors using a custom color palette selector.
-    - [ ] Captured colors codes must be correctly formatted and included in the prompt sent to the GroqAI API for analysis. The prompt should explicitly request color recommendations based on the selected color and ask for colors code to be included in the response from the AI.
-    - [ ] The application should effectively process the response from the GroqAI API, providing meaningful insights into the selected color.
+- Menu Fetching and Display
 
-- API Connectivity and Response Handling
-    - [ ] The application must establish reliable connectivity to the GroqAI API for color analysis.
-    - [ ] Response handling mechanisms should accurately interpret and extract relevant information from the API response.
-    - [ ] Error handling must be implemented to gracefully manage any issues encountered during API communication.
+  - [ ] The application should fetch menu data from the provided JSON file and categorize it appropriately.
+  - [ ] All menu items must be displayed with:
+        - images, 
+        - names, 
+        - prices.
 
-- Visual Representation
-    - [ ] The AI-generated color response should be visually represented in a clear and understandable manner within the application interface, effectively conveying the characteristics and attributes of the analyzed color along with their corresponding text descriptions.
+  - [ ] Users should be able to view the menu in an organized manner, with categories clearly delineated.
 
-## How to Obtain GroqAI API Key
+- Order Management
 
-  - Create an Account
-    - [ ] Visit the [GroqAI website](https://console.groq.com/login) and create an account.
-  - Navigate to API Keys
-    - [ ] Once logged in, go to the API keys section in the navigation menu.
-  - Generate a New API Key
-    - [ ] Click on "Create API Key" to generate your API key.
+  - [ ] Users should be able to:
+        - add items to their order,
+        - view a summary of their current order,
+        - add tips to their order total,
+        - remove items from their order before finalizing it.
+
+- Payment Processing
+
+  - [ ] Users must be able to add credit to their account.
+  - [ ] Payments should only be processed if the user has sufficient credit.
+  - [ ] The application should provide feedback to the user on successful or unsuccessful payment attempts.
+
+- User Interface and Experience
+
+  - [ ] The application must provide an intuitive and seamless user experience for browsing the menu and placing orders.
+  - [ ] Responsive design techniques must be used to ensure functionality across various devices and screen sizes.
 
 ## Acknowledgements
 
-We express gratitude to the [GroqCloud](https://console.groq.com) team for providing access to their API, enabling us to incorporate advanced color analysis capabilities into our application.
-Additionally, we appreciate the contributions of the wider developer community whose insights and expertise continually enrich our projects.
+We express gratitude to the [free-food-menus-api](https://github.com/igdev116/free-food-menus-api) for enabling us to incorporate a diverse range of menu items into our application. Additionally, we appreciate the contributions of the wider developer community whose insights and expertise continually enrich our projects.
 
 ## About Chingu
 
