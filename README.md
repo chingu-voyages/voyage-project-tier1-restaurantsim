@@ -73,7 +73,7 @@ implement to enhance this app, if time permits.
 -   Menu Fetching and Display
     - [ ] Fetch menu data from a provided JSON file.
     - [ ] Display the fetched menu items in respective categories on the page.
-    - [ ] Ensure the menu includes images, names, descriptions, and prices for each item.
+    - [ ] Ensure the menu includes images, names and prices for each item.
     
 -   Order Management
 
