@@ -100,6 +100,7 @@ implement to enhance this app, if time permits.
 
 - Menu Customization
 
+  - [ ] Implement search functionality based on ratings.
   - [ ] Utilize the Menus API to retrieve restaurant data and dynamically add more categories to the menu.
   - [ ] Implement filters and search functionality to easily find specific menu items.
 
@@ -109,22 +110,22 @@ implement to enhance this app, if time permits.
 - Menu Fetching and Display
 
   - [ ] The application should fetch menu data from the provided JSON file and categorize it by:
-        - meals,
-        - drinks,
-        - desserts.
+      - meals,
+      - drinks,
+      - desserts.
   - [ ] All menu items must be displayed with:
-        - images, 
-        - names, 
-        - prices.
+      - images, 
+      - names, 
+      - prices.
   - [ ] Users should be able to view the menu in an organized manner, with categories clearly delineated.
 
 - Order Management
 
   - [ ] Users should be able to:
-        - add items to their order,
-        - view a summary of their current order,
-        - add tips to their order total,
-        - remove items from their order before finalizing it.
+      - add items to their order,
+      - view a summary of their current order,
+      - add tips to their order total,
+      - remove items from their order before finalizing it.
 
 - Payment Processing
 
