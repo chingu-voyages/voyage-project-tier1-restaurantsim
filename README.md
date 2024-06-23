@@ -71,7 +71,7 @@ implement to enhance this app, if time permits.
     - [ ] Develop a single-page application (SPA) that simulates a restaurant menu and ordering system.
 
 -   Menu Fetching and Display
-    - [ ] Fetch menu data from a provided JSON file.
+    - [ ] Fetch menu data from the provided JSON file.
     - [ ] Display the fetched menu items in respective categories on the page.
     - [ ] Ensure the menu includes images, names and prices for each item.
     
