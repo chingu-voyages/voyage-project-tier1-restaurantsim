@@ -100,7 +100,6 @@ implement to enhance this app, if time permits.
 
 - Menu Customization
 
-  - [ ] Implement search functionality based on ratings.
   - [ ] Utilize the Menus API to retrieve restaurant data and dynamically add more categories to the menu.
   - [ ] Implement filters and search functionality to easily find specific menu items.
 
