@@ -81,6 +81,7 @@ implement to enhance this app, if time permits.
     - [ ] Display the current order summary, including item names, prices, and total cost.
     - [ ] Provide an option to add tips to the order total.
     - [ ] Ensure users can remove items from the order before finalizing it.
+    - [ ] leverage the browser's local storage to store order data efficiently
 
 -   Payment Processing
 
