@@ -126,6 +126,7 @@ implement to enhance this app, if time permits.
       - view a summary of their current order,
       - add tips to their order total,
       - remove items from their order before finalizing it.
+  - [ ] App utilizes the browser's local storage for storing user credit and order data.
 
 - Payment Processing
 
